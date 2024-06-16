@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Topview from './Components/Topview';
+import Centreview from './Components/Centreview';
+import Bodyview from './Components/Bodyview';
+import Bottomview from './Components/Bottomview';
+import Waveview from './Components/Waveview';
+import Functionview from './Components/Functionview';
+import Cardview from './Components/Cardview';
+import Footerview from './Components/Footerview';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Topview />
+      <Centreview />
+      <Bodyview />
+      <Bottomview />
+      <Waveview />
+      <Functionview />
+      <Cardview />
+      <Footerview />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
